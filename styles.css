@@ -1,0 +1,125 @@
+body {
+  overflow: auto; /* Hide scrollbars */
+  background-color:black;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width:95vmin;
+  line-height:0;
+  display: inline-block;
+}
+
+.enner {
+  margin-left: auto;
+  margin-right: auto;
+  width:95vmin;
+  overflow: auto;
+}
+
+.enner p{ 
+  margin: 1vmin 0vmin 1vmin 0vmin;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color:white;
+  font-size: 2.4vmin; 
+  line-height: 3.6vmin;  
+} 
+
+h1 {
+  margin: 1vmin 0vmin 1vmin 0vmin;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color:white;
+  font-size: 3.6vmin; 
+  line-height: 4.8vmin; 
+}
+
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img1 {
+  float: right;
+  width:50%;
+}
+
+.contframe {
+  display: flex;
+  justify-content: center;
+}
+    
+iframe {
+  aspect-ratio: 4 / 3;
+  width: 100% !important;
+}
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.container {
+  width:95vmin;
+  margin-top: 20vmin;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.navbar {
+  width: 95vmin;
+  background-color: black;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  margin: 0vmin 0vmin 1vmin 0vmin;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color:white;
+  font-size: 0vmin; 
+}
+
+.navbar > div {
+  display: inline-block;
+  display: -moz-inline-box;
+  *display: inline; /* For IE7 */
+  zoom: 1; /* Trigger hasLayout */
+  width: 19vmin;
+  height: 6vmin;
+  text-align: center;
+  border:1px solid white;
+  font-size: 3vmin; 
+  line-height: 5vmin;
+}
+
+/* Translation toggle styles */
+#translate-btn {
+  cursor: pointer;
+  user-select: none;
+}
